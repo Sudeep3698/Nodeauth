@@ -1,0 +1,69 @@
+doctype html
+html
+	head
+		title Check Out Page
+		meta(name='GENERATOR', content='Evrsoft First Page')
+	body
+		script(type='text/javascript', src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js')
+		script(type='text/javascript', src='/javascripts/main.js')
+	h1 Check Out Page
+		form#form1(method='post', action='/testtxn')
+			table(border='1')
+				tbody
+					tr
+						th S.No
+						th Label
+						th Value
+					tr
+						td 1
+						td
+							label ORDER_ID:
+						td
+							input#ORDER_ID(tabindex='1', maxlength='20', size='20', name='ORDER_ID', autocomplete='off', value='vidisha123')
+					tr
+						td 2
+						td
+							label CUSTID :
+						td
+							input#CUST_ID(tabindex='2', maxlength='12', size='12', name='CUST_ID', autocomplete='off', value='CUST001')
+					tr
+						td 3
+						td
+							label INDUSTRY_TYPE_ID :
+						td
+							input#INDUSTRY_TYPE_ID(tabindex='4', maxlength='12', size='12', name='INDUSTRY_TYPE_ID', autocomplete='off', value='Retail')
+					tr
+						td 4
+						td
+							label Channel :
+						td
+							input#CHANNEL_ID(tabindex='4', maxlength='12', size='12', name='CHANNEL_ID', autocomplete='off', value='WEB')
+					tr
+						td 5
+						td
+							label txnAmount:
+						td
+							input(title='TXN_AMOUNT', tabindex='10', type='text', name='TXN_AMOUNT', value='7500')
+					tr
+						td 6
+						td
+							label MID:
+						td
+							input(title='MID', tabindex='10', type='text', name='MID', value='nEihUf81958380864962')
+					tr
+						td 7
+						td
+							label WEBSITE:
+						td
+							input(title='WEBSITE', tabindex='10', type='text', name='WEBSITE', value='Bookstore')
+					tr
+						td 8
+						td
+							label PAYTM_MERCHANT_KEY:
+						td
+							input(title='WEBSITE', tabindex='10', type='text', name='PAYTM_MERCHANT_KEY', value='vgBm2RzycJkUKZds')
+					tr
+						td
+						td
+						td		
+							input#user-submit(value='CheckOut', type='submit')

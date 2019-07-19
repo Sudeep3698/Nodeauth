@@ -1,0 +1,28 @@
+extends layout
+
+block content
+	h1 Members Page
+	p Welcome #{user.name}
+
+
+	.table-responsive
+		.table-responsive
+			table.table
+				thead
+					tr.active
+						th(width='200') ID
+						th(width='200') Name
+						th(width='200') Username
+						th(width='200') Role
+						th(width='180')	Payment
+				tbody
+					tr
+						td #{user._id}
+						td #{user.name}
+						td #{user.username}
+						td #{user.role}
+						td 
+							if user.status
+								a.btn.btn-primary.btn-sm.active(href='/members/#{user._id}', role='button') Pay Now
+							else
+								a.btn.btn-primary.btn-sm.disabled(href='#', role='button') Pay Now

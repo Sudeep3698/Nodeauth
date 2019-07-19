@@ -1,0 +1,11 @@
+extends admin
+
+block content
+	h1 Payment Authentication
+	form(method='post', action= '/admins/edit/#{user._id}')
+		.form-group
+			label Status
+			select.form-control(name='status')
+					option(value='true') true
+					option(value='false') false
+		input.btn.btn-default(name='submit', type='submit', value='Save')

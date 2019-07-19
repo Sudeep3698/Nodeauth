@@ -1,0 +1,13 @@
+extends layout
+
+block content
+	h1 Admin Login
+	p Please only admin can login below
+	form(method='post', action= '/admins/admin/login')
+		.form-group
+			label Username
+			input.form-control(name='username', type='text')
+		.form-group
+			label Admin Code
+			input.form-control(name='adminCode', type='text')
+		input.btn.btn-default(name='submit', type='submit', value='Login')

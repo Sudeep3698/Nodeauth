@@ -1,0 +1,23 @@
+html
+	head
+		title Check Out Page
+	body
+		if (restdata == 'true')
+			center
+				h1 validation succesfull
+		else
+			center
+				h1 validation unsuccesfull
+			form(method='post', name='f1')
+				for (name in paramlist) 
+					table(border='1')
+						tbody
+							tr
+								th Label
+								th Value
+							tr
+								td
+									label name 
+								td
+									input(id='name', tabindex='1', maxlength='30', size='30', name='name', autocomplete='off', value='paramlist[name]')
+	script(type='text/javascript').

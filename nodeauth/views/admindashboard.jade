@@ -1,0 +1,25 @@
+extends layout
+
+block content
+	h1 Dashboard
+	p Welcome to the dashboard
+
+	.table-responsive
+		.table-responsive
+			table.table.table-hover
+				thead
+					tr.active
+						th(width='200') ID
+						th(width='200') Name
+						th(width='200') Username
+						th(width='200') Role
+						th(width='180')	Payment
+				tbody
+					each user in users
+						tr
+							td #{user._id}
+							td #{user.name}
+							td #{user.username}
+							td #{user.role}
+							td
+								a.btn.btn-primary.btn-sm(href='/admins/#{user._id}', role='button') Allow	

@@ -1,0 +1,14 @@
+html
+	head
+		title Check Out Page
+	body
+		center
+			h1 Please do not refresh this page...
+			form(method='post', action='https://pguat.paytm.com/oltp-web/processTransaction', name='f1')
+				table(border='1')
+					tbody
+						each name, i in restdata 
+							p= name 
+							p= restdata[name] 
+			input(type='hidden', name='#{name}', value='#{restdata[name]}')
+	script( src='/javascripts/submit.js')
